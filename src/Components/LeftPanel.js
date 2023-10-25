@@ -4,10 +4,9 @@ import PanelArea from './PanelArea'
 function LeftPanel() {
   const [active, isActive] = useState(0);
   const [isMyActive, setIsMyActive] = useState('left-tabs');
-  console.log(active)
 
   const changeStylesFunc = (e) => {
-    if(e == 'call'){setIsMyActive('left-tabs')}
+    if(e === 'call'){setIsMyActive('left-tabs')}
     else{setIsMyActive('left-tabs active')}
     isActive(0)
   }

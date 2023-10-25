@@ -6,8 +6,8 @@ function Transcript() {
   return (
     <div className='transcript-area'>
         <TitleSm name='Transcript'/>
-            {transcriptData.map((item) => 
-              <div className='transcript-box'>
+            {transcriptData.map((item,index) => 
+              <div className='transcript-box' key={index}>
                 <h4>{item.title}</h4>
                 <span>{item.subTitle}</span>
                 <p>{item.description}</p>

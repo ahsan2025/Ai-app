@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { AdminNumarea,EndCall,Incoming } from '../Imports/ImportImages';
-import TabTitle from './TabTitle';
 
 const MyDialpad = (props) => {
   const [input, setInput] = useState('');
@@ -43,9 +42,9 @@ const MyDialpad = (props) => {
         <button onClick={() => handleKeyPress('*')}>*</button>
         <button onClick={() => handleKeyPress('0')}>0</button>
         <button onClick={() => handleKeyPress('#')}>#</button>
-        <button onClick={() => handleKeyPress('')}><span><img src={AdminNumarea}/></span></button>
-        <button onClick={props.onClick}><span className='endcall'><img src={EndCall}/></span></button>
-        <button onClick={() => handleKeyPress('')}><span><img src={Incoming}/></span></button>
+        <button onClick={() => handleKeyPress('')}><span><img src={AdminNumarea} alt='adminnumarea'/></span></button>
+        <button onClick={props.onClick}><span className='endcall'><img src={EndCall} alt='endcall'/></span></button>
+        <button onClick={() => handleKeyPress('')}><span><img src={Incoming} alt='incoming'/></span></button>
       </div>
     </div>
   );

@@ -1069,3 +1069,10 @@ header .admin-panel{
 
 
 
+@media(max-width:1600px){
+  .main-dashboard .customprofile{
+    height: 200px;
+    overflow: scroll;
+    padding: 12px;
+  }
+}

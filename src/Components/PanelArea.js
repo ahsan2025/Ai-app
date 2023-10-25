@@ -2,7 +2,6 @@ import {React,useState} from 'react'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { Call,Message,History } from '../Imports/ImportImages';
-import QuickConnects from './QuickConnects';
 import Phone from './Phone';
 import MessagePanel from './MessagePanel';
 import TaskPanel from './TaskPanel';

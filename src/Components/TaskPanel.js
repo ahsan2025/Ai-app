@@ -1,6 +1,5 @@
 import React from 'react'
-import TabTitle from './TabTitle'
-import { TaskTabImg,Calender,Clock,TaskPerson,AddTaskImg} from '../Imports/ImportImages'
+import { Calender,Clock,TaskPerson} from '../Imports/ImportImages'
 import { taskData } from '../resource/localData'
 
 function TaskPanel() {
@@ -16,13 +15,13 @@ function TaskPanel() {
     </div> */}
     <div className='message-panelstatus task-panelstatus'>
         <div>
-            {taskData.map((item) => 
-            <div className='message-box task-box'>
+            {taskData.map((item,index) => 
+            <div className='message-box task-box' key={index}>
                 <h4 style={{fontSize:'19px'}}>{item.title}</h4>
-                <span><img src={Calender} alt='image'/>{item.date}</span>
-                <span><img src={Clock} alt='image'/>{item.time}</span>
+                <span><img src={Calender} alt='calender'/>{item.date}</span>
+                <span><img src={Clock} alt='clock'/>{item.time}</span>
                 <p>{item.description}</p>
-                <span className='task-user' style={{color:'var(--white)'}}><img src={TaskPerson} alt='image'/>{item.user}</span>
+                <span className='task-user' style={{color:'var(--white)'}}><img src={TaskPerson} alt='taskperson'/>{item.user}</span>
             </div>
             )}
             <div className='add-task'>

@@ -5,11 +5,11 @@ function ButtonGroups() {
   return (
     <div className='button-groups'>
         <button>
-            <img src={Video}/>
+            <img src={Video} alt='call'/>
             Video Call
         </button>
         <button>
-            <img src={ScreenShare}/>
+            <img src={ScreenShare} alt='screenshare'/>
             Screenshare
         </button>
     </div>

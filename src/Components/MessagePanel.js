@@ -1,6 +1,4 @@
 import React from 'react'
-// import { MessageTabImg } from '../Imports/ImportImages'
-// import TabTitle from './TabTitle'
 import { messageData } from '../resource/localData'
 import { Send,MingCute,ContactMes,EndChat } from '../Imports/ImportImages'
 
@@ -20,8 +18,8 @@ function MessagePanel() {
                 <span>03:54 PM</span>
             </div>
             <div style={{height:'450px',overflow:'auto'}}>
-                {messageData.map((item) => 
-                <div className='message-box'>
+                {messageData.map((item,index) => 
+                <div className='message-box' key={index}>
                     <h4>{item.title}</h4>
                     <span>{item.subTitle}</span>
                     <p>{item.description}</p>
@@ -30,17 +28,17 @@ function MessagePanel() {
             </div>
             <div className='message-type' style={{marginTop:'20px'}}>
                 <input type='text' placeholder='Write message here'/>
-                <button><img src={Send}/></button>
+                <button><img src={Send} alt='send'/></button>
             </div>
             <div className='message-bottombox'>
                 <div className='mingcute'>
-                    <img src={MingCute} alt='image'/>
+                    <img src={MingCute} alt='mingcute'/>
                 </div>
                 <div className='mingcute'>
-                    <img src={ContactMes} alt='image'/>
+                    <img src={ContactMes} alt='contactmes'/>
                 </div>
                 <div className='endchat'>
-                    <img src={EndChat} alt='image'/>
+                    <img src={EndChat} alt='endchat'/>
                 </div>
             </div>
         </div>

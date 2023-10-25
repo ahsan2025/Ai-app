@@ -6,7 +6,7 @@ function Chart() {
   return (
     <div>
         <Title name='Real Time Conversational Analytics'/>
-        <img src={Graph} alt='image'/>
+        <img src={Graph} alt='graph'/>
     </div>
   )
 }
