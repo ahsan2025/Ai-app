@@ -1,10 +1,11 @@
 import React from 'react'
 import { messageData } from '../resource/localData'
 import { Send,MingCute,ContactMes,EndChat } from '../Imports/ImportImages'
+import CallOptions from './CallOptions';
 
 function MessagePanel() {
   return (
-    <div style={{height:'100%',display:'flex',justifyContent:'center',width:'100%'}}>
+    <div style={{height: '100%',display:'flex',justifyContent:'center',width:'100%'}}>
         {/* <div style={{display:'flex',flexDirection: 'column', justifyContent: 'center',alignItems:'center'}}>
             <div className='picture' style={{marginBottom:'40px'}}>
             <img src={MessageTabImg} alt='alex'/>
@@ -17,7 +18,7 @@ function MessagePanel() {
                 <h3>Connected Chat With Alexendera Paul</h3>
                 <span>03:54 PM</span>
             </div>
-            <div style={{height:'450px',overflow:'auto'}}>
+            <div className='messagepanel-chatbox'>
                 {messageData.map((item,index) => 
                 <div className='message-box' key={index}>
                     <h4>{item.title}</h4>
@@ -25,11 +26,12 @@ function MessagePanel() {
                     <p>{item.description}</p>
                 </div>
                 )}
-            </div>
-            <div className='message-type' style={{marginTop:'20px'}}>
+                <div className='message-type' style={{marginTop:'20px'}}>
                 <input type='text' placeholder='Write message here'/>
                 <button><img src={Send} alt='send'/></button>
+                </div>
             </div>
+            
             <div className='message-bottombox'>
                 <div className='mingcute'>
                     <img src={MingCute} alt='mingcute'/>

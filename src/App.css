@@ -7,6 +7,30 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--light); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D9D9D9; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary2); 
+}
+
+/* Scrollbar */
+
 .dashboard-area{
   height: 100vh;
   padding-bottom: 32px;
@@ -130,6 +154,7 @@ header .admin-panel{
   border-radius: 10px 10px 0px 0px;
   padding: 9px 0px;
   border: none;
+  margin: 0;
   padding: 09px 15px;
 }
 
@@ -167,6 +192,7 @@ header .admin-panel{
 
 .left-tabs .tabdody{
   height: inherit;
+  overflow: auto;
   /* display: flex;
   flex-direction: column; */
 }
@@ -393,6 +419,7 @@ header .admin-panel{
   flex-wrap: wrap;
   padding: 0 15px;
   border-radius: 40px;
+  margin: 0 14px;
   background: var(--primary2);
 }
 
@@ -467,10 +494,14 @@ header .admin-panel{
   background-color: var(--light);
   display: flex;
   flex-direction: column;
-  margin-top: -15px;
   position: relative;
   padding: 0 20px;
   /* border-radius: 30px; */
+}
+
+.left-tabs .message-panelstatus .messagepanel-chatbox{
+  height: calc(100% - 210px);
+  overflow: auto;
 }
 
 .left-tabs .message-panelstatus h3{ 
@@ -582,7 +613,7 @@ header .admin-panel{
 .main-dashboard .grid-profile > div{
   display: flex;
   width: 25%;
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
 
 .main-dashboard .table-area th:nth-child(n+2),
@@ -641,13 +672,17 @@ header .admin-panel{
   color: var(--primary2);
 }
 
+.main-dashboard .mytable th{
+  padding: 12px;
+}
+
 .main-dashboard .mytable th,
 .main-dashboard .mytable td{
   border: none;
 }
 
 .main-dashboard .react-tabs__tab-list li{
-  padding: 12px 20px;
+  padding: 10px 20px;
   filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.10));
   background-color: transparent;
   border: none;
@@ -658,7 +693,7 @@ header .admin-panel{
 }
 
 .main-dashboard .mytable .tabdody{
-  padding: 20px;
+  padding: 12px;
 }
 
 .main-dashboard .table-area td{
@@ -729,6 +764,10 @@ header .admin-panel{
   display: flex;
   align-items: center;
   position: relative;
+  position: sticky;
+  bottom: 0;
+  padding: 10px 0;
+  background-color: var(--white);
 }
 
 .left-tabs .message-panelstatus .message-bottombox{
@@ -1069,10 +1108,383 @@ header .admin-panel{
 
 
 
-@media(max-width:1600px){
+@media(max-width:1800px){
+  header{
+    padding: 6px 32px;
+  }
+  .dashboard{
+    padding: 15px 20px;
+  }
+  .left-tabs{
+    padding: 7px 8px 0 8px;
+  }
+  .left-tabs .welcome{
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .left-tabs h2{
+    font-size: 24px;
+  }
+  .left-tabs .picture img{
+    height: 160px;
+  }
+  .left-tabs li{
+    height: 40px;
+  }
+  .left-tabs li img{
+    width: 22px;
+  }
+  .left-tabs li:nth-child(3) img{
+    width: 20px;
+    height: 24px;
+  }
+  .left-tabs .bottom-area button{
+    font-size: 13px;
+  }
+  .left-tabs .bottom-area button img{
+    width: 24px;
+  }
+  .left-tabs .bottom-area button:nth-child(2) img{
+    width: 27px;
+  }
+  .title-main h2{
+    font-size: 18px;
+  }
+  .main-dashboard .plusbutton{
+    height: 36px;
+    width: 36px;
+    font-size: 17px;
+  }
   .main-dashboard .customprofile{
-    height: 200px;
-    overflow: scroll;
-    padding: 12px;
+    padding: 13px 24px;
+  }
+  .main-dashboard .customprofile .picturediv{
+    height: 38px;
+    margin-right: 10px;
+    width: 38px;
+  }
+  .main-dashboard .grid-profile{
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-top: 18px;
+    overflow: auto;
+  }
+  .main-dashboard .customprofile label{
+    font-size: 14px;
+  }
+  .main-dashboard .customprofile span{
+    font-size: 13px;
+  }
+  .main-dashboard .grid-profile > div{
+    min-width: 200px; 
+    margin-bottom: 0;
+  }
+  .main-dashboard .react-tabs__tab-list li{
+    font-size: 12px;
+    padding: 6px 20px;
+  }
+  .main-dashboard .mytable .react-tabs__tab-list{
+    padding: 5px;
+  }
+  .main-dashboard .mytable,
+  .main-dashboard .grid-d-bottom,
+  .right-panel .button-groups,
+  .right-panel .user-journey,
+  .right-panel .steps{
+    margin-top: 14px;
+  }
+  .main-dashboard .table-area th{
+    padding: 6px;
+    font-size: 12px;
+  }
+  .main-dashboard .table-area td{
+    padding: 8px;
+    font-size: 12px;
+  }
+  .main-dashboard .mytable .tabdody{
+    padding: 10px;
+  }
+  .main-dashboard .grid-d-bottom .transcript-area h3{
+    font-size: 16px;
+  }
+  .main-dashboard .transcript-area h4{
+    font-size: 13px;
+  }
+  .main-dashboard .transcript-area span{
+    font-size: 12px;
+  }
+  .main-dashboard .transcript-area p{
+    font-size: 12px;
+  }
+  .main-dashboard .grid-d-bottom .transcript-area{
+    padding: 7px 12px;
+  }
+  .main-dashboard .transcript-area .transcript-box{
+    padding: 7px 18px;
+  }
+  .main-dashboard .mytable .css-41abqd-MuiTableContainer-root{
+    height: 120px;
+  }
+  .right-panel .search-area input{
+    height: 45px;
+    font-size: 14px;
+  }
+  .right-panel .search-area .search-img img{
+    width: 20px;
+  }
+  .right-panel .search-results{
+    padding: 14px;
+  }
+  .right-panel .titlesm{
+    font-size: 16px;
+  }
+  .right-panel .search-results h4{
+    font-size: 14px;
+  }
+  .right-panel .search-results p{
+    font-size: 11px;
+  }
+  .right-panel .steps{
+    padding: 13px 0;
+    font-size: 15px;
+  }
+  .right-panel .steps img{
+    width: 18px;
+  }
+  .right-panel .button-groups button{
+    padding: 13px 0;
+    font-size: 14px;
+  }
+  .right-panel .button-groups button img{
+    width: 20px;
+  }
+  .right-panel .journey-item div img{
+    width: 30px;
+  }
+  .right-panel .journey-item:nth-child(4) .line img{
+    width: 100px;
+  }
+  .right-panel .user-journey{
+    padding: 13px;
+  }
+  .user-jorney .title-main h2{
+    font-size: 16px;
+  }
+  .main-dashboard .mytable tbody tr td:nth-child(5) p{
+    padding: 7px !important;
+  }
+  .left-tabs .quick-connect .MuiSelect-select{
+    padding: 10px;
+    font-size: 13px;
+  }
+  .left-tabs .quick-connect .phone-num{
+    font-size: 15px;
+    padding-top: 20px;
+  }
+  .MuiList-root {
+    padding: 1px 0 !important;
+  }
+  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+    font-size: 13px !important; 
+    padding: 05px 10px !important;
+  }
+  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root em{
+    display: flex;
+    align-items: center;
+  }
+  .left-tabs .numpad-area .row button{
+    padding: 10px;
+    font-size: 24px;
+  }
+  .left-tabs .numpad-area .row button img{
+    width: 28px;
+  }
+  .left-tabs .numpad-area .close-button{
+    padding: 5px 9px;
+    font-size: 25px;
+  }
+  .left-tabs .numpad-area input{
+    margin-bottom: 20px;
+  }
+  .left-tabs .numberpad .number{
+    font-size: 22px;
+  }
+  .left-tabs .numberpad .duration{
+    font-size: 24px;
+    padding-top: 5px;
+  }
+  .left-tabs .numberpad .picture{
+    padding: 9px 0px;
+  }
+  .left-tabs .numberpad .picture img{
+    width: 90px;
+    display: block;
+    height: auto;
+    padding: 0 !important;
+  }
+  .left-tabs .numberpad .round-box img{
+    width: 22px;
+  }
+  .left-tabs .numberpad .round{
+    height: 55px;
+    width: 55px;
+  }
+  .left-tabs .numberpad span{
+    font-size: 12px;
+  }
+  .left-tabs .numberpad .round-box:nth-child(5) .round{
+    height: 60px !important;
+    width: 60px !important;
+  }
+  .left-tabs .message-panelstatus{
+    padding: 0 10px;
+  }
+  .left-tabs .message-panelstatus h3{
+    font-size: 13px;
+  }
+  .left-tabs .message-panelstatus .toparea span{
+    font-size: 12px;
+  }
+  .left-tabs .message-panelstatus .toparea{
+    padding-top: 10px;
+    margin-bottom: 14px;
+  }
+  .left-tabs .message-panelstatus .message-box {
+    padding: 7px 12px;
+    margin-bottom: 10px;
+  }
+  .left-tabs .message-panelstatus h4,
+  .left-tabs .message-panelstatus span{
+    font-size: 12px;
+  }
+  .left-tabs .message-panelstatus p{
+    font-size: 13px;
+  }
+  .left-tabs .message-panelstatus .message-bottombox{
+    padding: 13px;
+  }
+  .left-tabs .message-panelstatus .mingcute{
+    padding: 6px;
+  }
+  .left-tabs .message-panelstatus .mingcute img,
+  .left-tabs .message-panelstatus .endchat img{
+    width: 20px;
+  }
+  .left-tabs .message-panelstatus input{
+    padding: 13px;
+    font-size: 13px;
+    text-indent: 7px;
+  }
+  .left-tabs .message-panelstatus .message-type button{
+    padding: 8px;
+  }
+  .left-tabs .task-panelstatus .task-box{
+    margin-top: 13px;
+  }
+  .left-tabs .task-panelstatus .task-box h4{
+    font-size: 14px !important;
+    padding-bottom: 8px;
+  }
+  .left-tabs .task-panelstatus p{
+    padding-top: 8px;
+    padding-bottom: 14px;
+  }
+  .left-tabs .task-panelstatus .task-user{
+    padding: 7px 18px;
+    font-size: 12px;
+  }
+  .left-tabs .task-panelstatus .add-task{
+    height: 55px;
+    width: 55px;
+  }
+
+}
+
+@media(max-width:1550px){
+  header{
+    padding: 5px 12px;
+  }
+  .dashboard {
+    padding: 8px 13px;
+  }
+  .main-dashboard{
+    padding: 0 10px;
+  }
+  .left-tabs {
+    padding: 5px 6px 0 6px;
+  }
+  .left-tabs .picture img {
+    height: 130px;
+  }
+  .left-tabs .welcome {
+    font-size: 16px;
+    padding-top: 6px;
+  }
+  .left-tabs h2 {
+    font-size: 19px;
+  }
+  .left-tabs .bottom-area button{
+    font-size: 12px;
+  }
+  .main-dashboard .customprofile{
+    padding: 9px 17px;
+  }
+  .title-main h2{
+    font-size: 14px;
+  }
+  .main-dashboard .customprofile label,
+  .main-dashboard .customprofile span{
+    font-size: 12px;
+  }
+  .main-dashboard .table-area th{
+    font-size: 10px;
+  }
+  .main-dashboard .table-area td{
+    font-size: 11px;
+  }
+  .right-panel .search-area input{
+    height: 35px;
+    font-size: 12px;
+  }
+  .right-panel .search-results{
+    padding: 10px;
+  }
+  .right-panel .titlesm{
+    font-size: 14px;
+  }
+  .right-panel .search-results .content-box{
+    padding: 10px 18px;
+  }
+  .main-dashboard .mytable,
+  .main-dashboard .grid-d-bottom,
+  .right-panel .steps,
+  .right-panel .button-groups,
+  .right-panel .user-journey{
+    margin-top: 10px;
+  }
+  .main-dashboard .mytable tbody tr td:nth-child(5) p{
+    padding: 6px !important;
+  }
+  .main-dashboard .mytable .tabdody{
+    padding: 6px;
+  }
+  .main-dashboard .mytable table{
+    margin-top: 5px;
+  }
+  .main-dashboard .grid-d-bottom .transcript-area{
+    padding: 5px 9px;
+  }
+  .right-panel .button-groups button {
+    padding: 9px 0;
+    font-size: 12px;
+  }
+  .right-panel .user-journey span{
+    font-size: 12px;
+  }
+  .main-dashboard .grid-profile{
+    margin-top: 7px;
+  }
+  .main-dashboard .mytable .css-41abqd-MuiTableContainer-root{
+    height: 100px;
   }
 }
