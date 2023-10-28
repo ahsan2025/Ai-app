@@ -156,6 +156,7 @@ header .admin-panel{
   border: none;
   margin: 0;
   padding: 09px 15px;
+  z-index: 9;
 }
 
 .react-tabs__tab:focus:after{
@@ -300,8 +301,6 @@ header .admin-panel{
 
 .left-tabs .numberpad{
   background: linear-gradient(179deg, #0F094F 12.46%, #25CB88 182.42%);
-  margin-left: -15px;
-  margin-right: -15px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }
@@ -419,7 +418,6 @@ header .admin-panel{
   flex-wrap: wrap;
   padding: 0 15px;
   border-radius: 40px;
-  margin: 0 14px;
   background: var(--primary2);
 }
 
@@ -468,12 +466,15 @@ header .admin-panel{
 
 .left-tabs .numpad-area{
   height: 100%;
-  margin: 0 -15px;
-  margin-right: -15px;
   display: flex;
   flex-direction: column;
   background-color: var(--white);
   justify-content: flex-end;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .left-tabs .numpad-area button span{
@@ -494,13 +495,17 @@ header .admin-panel{
   background-color: var(--light);
   display: flex;
   flex-direction: column;
-  position: relative;
   padding: 0 20px;
   /* border-radius: 30px; */
 }
 
 .left-tabs .message-panelstatus .messagepanel-chatbox{
   height: calc(100% - 210px);
+  overflow: auto;
+}
+
+.left-tabs .task-panelstatus{
+  height: calc(100% - 100px);
   overflow: auto;
 }
 
@@ -885,7 +890,7 @@ header .admin-panel{
   font-size: 25px;
   position: absolute;
   bottom: 15px;
-  right: 0px;
+  right: 8px;
 }
 
 .left-tabs .task-panelstatus .task-box:nth-child(even){
@@ -1339,6 +1344,9 @@ header .admin-panel{
   .left-tabs .message-panelstatus{
     padding: 0 10px;
   }
+  .left-tabs .task-panelstatus{
+    padding: 0;
+  }
   .left-tabs .message-panelstatus h3{
     font-size: 13px;
   }
@@ -1487,12 +1495,419 @@ header .admin-panel{
   .main-dashboard .mytable .css-41abqd-MuiTableContainer-root{
     height: 100px;
   }
+  .grid-d-bottom img{
+    width: 100%;
+  }
 }
 
 
+@media(max-width:1350px){
+  header .logo img{
+    width: 60px;
+  }
+  header span{
+    font-size: 11px;
+  }
+  header .settings img{
+    width: 15px;
+  }
+  header .name span::before{
+    height: 15px;
+    width: 15px;
+  }
+  header .available, header .name{
+    padding: 0 10px;
+  }
+  .dashboard {
+    padding: 6px 8px;
+  }
+  .left-tabs .react-tabs__tab-list{
+    padding: 7px 9px;
+  }
+  .left-tabs li{
+    height: 30px;
+  }
+  .left-tabs li img{
+    width: 18px;
+  }
+  .left-tabs li:nth-child(3) img{
+    width: 15px;
+    height: 24px;
+  }
+  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
+    padding: 4px 7px !important;
+    font-size: 10px !important;
+  }
+  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root img{
+    width: 20px;
+  }
+  .left-tabs .quick-connect .MuiSelect-select {
+    padding: 7px;
+    font-size: 12px;
+  }
+  .left-tabs .bottom-area button{
+    font-size: 11px;
+    padding: 8px;
+  }
+  .left-tabs .numberpad .number{
+   font-size: 18px;
+  }
+  .left-tabs .numberpad .duration{
+    font-size: 20px;
+  }
+  .left-tabs .numberpad .picture img{
+    width: 60px;
+  }
+  .left-tabs h2{
+    font-size: 16px;
+  }
+  .left-tabs .numberpad .round{
+    height: 40px;
+    width: 40px;
+  }
+  .left-tabs .numberpad .round-box img{
+    width: 17px;
+  }
+  .left-tabs .numberpad .round-box:nth-child(5) .round{
+    height: 50px !important;
+    width: 50px !important;
+  }
+  .left-tabs .numberpad span{
+    font-size: 10px;
+  }
+  .left-tabs .message-panelstatus h3{
+    font-size: 11px;
+  }
+  .left-tabs .message-panelstatus .toparea span{
+    font-size: 10px;
+  }
+  .left-tabs .message-panelstatus h4, .left-tabs .message-panelstatus span{
+    font-size: 10px !important;
+  }
+  .left-tabs .task-panelstatus .task-box h4{
+    padding-bottom: 5px;
+  }
+  .left-tabs .message-panelstatus p{
+    font-size: 10px;
+    line-height: 14px;
+    padding-top: 6px;
+    padding-bottom: 9px;
+  }
+  .left-tabs .message-panelstatus input{
+    padding: 10px 6px;
+    font-size: 11px;
+  }
+  .left-tabs .message-panelstatus .message-type button{
+    padding: 6px;
+  }
+  .left-tabs .numpad-area .row button{
+    font-size: 20px;
+  }
+  .left-tabs .numpad-area .row button span{
+    padding: 5px 24px;
+  }
+  .left-tabs .numpad-area .row button img{
+    width: 22px;
+  }
+  .left-tabs .task-panelstatus .add-task{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+  }
+  .right-panel .user-journey span{
+    font-size: 9px;
+  }
+  .right-panel .user-journey h5{
+    font-size: 10px;
+  }
+  .left-tabs .bottom-area button img{
+    margin-bottom: 10px;
+  }
+  .left-tabs .quick-connect .MuiSvgIcon-root {
+    left: 24px;
+    width: 16px;
+  }
 
+}
 
+@media(max-width:1150px){
+  .left-tabs li{
+    height: 25px;
+  }
+  .left-tabs li img{
+    width: 14px;
+  }
+  .left-tabs .react-tabs__tab-list{
+    padding: 3px 6px;
+  }
+  .left-tabs li:nth-child(3) img{
+    width: 12px;
+    height: 20px;
+    position: relative;
+    top: -2.5px;
+  }
+  header .logo img{
+    width: 50px;
+  }
+  header span{
+    font-size: 10px;
+  }
+  .left-tabs .welcome{
+    font-size: 14px;
+  }
+  .left-tabs .bottom-area button{
+    font-size: 8px;
+  }
+  .left-tabs .bottom-area button img{
+    width: 18px;
+  }
+  .left-tabs .quick-connect .MuiSelect-select{
+    font-size: 10px;
+    text-indent: 17px;
+    padding: 4px;
+  }
+  .form-group img{
+    width: 15px;
+  }
+  .left-tabs .quick-connect h2{
+    font-size: 14px;
+  }
+  .left-tabs .quick-connect .phone-num{
+    font-size: 12px;
+  }
+  .left-tabs .quick-connect .MuiSvgIcon-root {
+    left: 20px;
+  }
+  .left-tabs .numpad-area .row{
+    padding: 0 10px;
+  }
+  .left-tabs .numpad-area .row button{
+    font-size: 15px;
+  }
+  .left-tabs .numpad-area .row button span{
+    padding: 3px 20px;
+  }
+  .left-tabs .numpad-area .row button img{
+    width: 18px;
+  }
+  .left-tabs .numpad-area .close-button{
+    font-size: 20px;
+  }
+  .left-tabs .numberpad .number{
+    font-size: 15px;
+  }
+  .left-tabs .numberpad .duration{
+    font-size: 17px;
+  }
+  .left-tabs .numberpad {
+    height: calc(100% - 100px) !important;
+  }
+  .left-tabs .numberpad .picture img{
+    width: 50px;
+  }
+  .left-tabs h2{
+    font-size: 14px;
+  }
+  .left-tabs .numberpad .round{
+    height: 30px;
+    width: 30px;
+  }
+  .left-tabs .numberpad .round-box img{
+    width: 12px;
+  }
+  .left-tabs .numberpad .round-box:nth-child(5) .round{
+    height: 40px !important;
+    width: 40px !important;
+  }
+  .left-tabs .numberpad span{
+    font-size: 9px;
+  }
+  .left-tabs .numberpad .call-options{
+    margin-top: 20px;
+  }
+  .left-tabs .message-panelstatus h3{
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .left-tabs .message-panelstatus .toparea{
+    padding-top: 5px;
+  }
+  .left-tabs .message-panelstatus .message-box{
+    padding: 7px;
+    margin-top: 9px;
+  }
+  .left-tabs .message-panelstatus p{
+    padding-top: 0;
+  }
+  .left-tabs .message-panelstatus h4, .left-tabs .message-panelstatus span{
+    font-size: 9px !important;
+  }
+  .left-tabs .message-panelstatus input{
+    padding: 8px 5px;
+    font-size: 10px;
+  }
+  .left-tabs .message-panelstatus .message-type button{
+    padding: 4px;
+  }
+  .left-tabs .message-panelstatus .message-type button img{
+    width: 10px;
+  }
+  .left-tabs .message-panelstatus .message-bottombox{
+    padding: 10px;
+  }
+  .left-tabs .message-panelstatus .mingcute{
+    padding: 4px;
+  }
+  .left-tabs .message-panelstatus .mingcute img, .left-tabs .message-panelstatus .endchat img{
+    width: 14px;
+  }
+  .left-tabs .task-panelstatus .task-box h4{
+    font-size: 12px !important;
+  }
+  .left-tabs .message-panelstatus h4, .left-tabs .message-panelstatus span{
+    font-size: 8px !important;
+  }
+  .left-tabs .message-panelstatus p{
+    font-size: 9px;
+  }
+  .left-tabs .task-panelstatus .task-user{
+    padding: 6px 9px;
+  }
+  .left-tabs .task-panelstatus span img{
+    margin-right: 7px;
+    width: 13px;
+  }
+  .left-tabs .task-panelstatus .add-task {
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+  }
+  .title-main h2{
+    font-size: 12px;
+  }
+  .main-dashboard .customprofile .picturediv{
+    width: 23px;
+    height: 23px;
+  }
+  .main-dashboard .customprofile img{
+    width: 15px;
+  }
+  .main-dashboard .customprofile label, .main-dashboard .customprofile span{
+    font-size: 11px;
+  }
+  .main-dashboard .plusbutton{
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+  }
+  .main-dashboard .react-tabs__tab-list li{
+    font-size: 10px;
+    padding: 4px 12px;
+  }
+  .main-dashboard .mytable .react-tabs__tab-list{
+    padding: 4px;
+    display: flex;
+  }
+  .main-dashboard .table-area th{
+    font-size: 8px;
+    padding: 0 4px;
+    min-width: 110px !important;
+  }
+  .main-dashboard .table-area td{
+    font-size: 10px;
+    padding: 4px;
+  }
+  .main-dashboard .mytable tbody tr td:nth-child(5) p{
+    padding: 4px !important;
+    font-size: 8px;
+  }
+  .main-dashboard .mytable .css-41abqd-MuiTableContainer-root{
+    height: 70px;
+  }
+  .main-dashboard .grid-d-bottom .transcript-area h3{
+    font-size: 12px;
+  }
+  .main-dashboard .grid-d-bottom .transcript-area{
+    padding: 4px 7px;
+  }
+  .main-dashboard .transcript-area .transcript-box{
+    margin-top: 8px;
+    padding: 5px;
+  }
+  .main-dashboard .transcript-area h4{
+    font-size: 10px;
+  }
+  .main-dashboard .transcript-area p{
+    line-height: 13px;
+  }
 
+  .right-panel .search-area input{
+    height: 28px;
+    font-size: 10px;
+    text-indent: 30px;
+  }
+  .right-panel .search-area .search-img{
+    left: 10px;
+  }
+  .right-panel .search-area .search-img img{
+    width: 14px;
+  }
+  .right-panel .search-area button img{
+    width: 10px;
+  }
+  .right-panel .titlesm h2{
+    font-size: 12px;
+  }
+  .right-panel .search-results h4{
+    font-size: 11px;
+  }
+  .right-panel .search-results p{
+    font-size: 9px;
+    line-height: 13px;
+    padding-top: 6px;
+  }
+  .right-panel .search-results .content-box,
+  .right-panel .search-results{
+    padding: 8px;
+  }
+  .right-panel .button-groups button{
+    font-size: 10px;
+  }
+  .right-panel .button-groups button img{
+    width: 10px;
+    margin-right: 7px;
+  }
+  
+  .right-panel .steps{
+    padding: 7px 0;
+  }
+  .right-panel .steps h3{
+    font-size: 10px;
+  }
+  .right-panel .steps img{
+    width: 11px;
+    margin-right: 8px;
+  }
+  .right-panel .user-journey{
+    padding: 10px;
+  }
+  .right-panel .user-journey .grid-journey{
+    margin-top: 10px;
+  }
+  .right-panel .user-journey h5{
+    font-size: 9px;
+  }
+  .right-panel .journey-item div img{
+    width: 20px;
+  }
+  .main-dashboard .transcript-area span,
+  .main-dashboard .transcript-area p{
+    font-size: 9px;
+  }
+  .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root img{
+    width: 15px;
+  }
+}
 
 
 

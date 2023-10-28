@@ -9,6 +9,7 @@ function LeftPanel() {
     if(e === 'call'){setIsMyActive('left-tabs')}
     else{setIsMyActive('left-tabs active')}
     isActive(0)
+   
   }
 
   return (

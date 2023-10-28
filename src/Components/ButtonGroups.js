@@ -1,6 +1,5 @@
 import {React} from 'react'
 import { Video,ScreenShare } from '../Imports/ImportImages'
-import ModalBox from './Modal/ModalBox';
 
 function ButtonGroups() {
   return (
