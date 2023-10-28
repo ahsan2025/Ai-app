@@ -1,9 +1,6 @@
 import React from 'react'
 import { messageData } from '../resource/localData'
 import { Send,MingCute,ContactMes,EndChat } from '../Imports/ImportImages'
-import CallOptions from './CallOptions';
-import { Modal } from '@mui/material';
-import ModalBox from './Modal/ModalBox';
 
 function MessagePanel() {
   return (
