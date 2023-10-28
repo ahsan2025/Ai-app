@@ -2,9 +2,12 @@ import React from 'react'
 import { messageData } from '../resource/localData'
 import { Send,MingCute,ContactMes,EndChat } from '../Imports/ImportImages'
 import CallOptions from './CallOptions';
+import { Modal } from '@mui/material';
+import ModalBox from './Modal/ModalBox';
 
 function MessagePanel() {
   return (
+   
     <div style={{height: '100%',display:'flex',justifyContent:'center',width:'100%'}}>
         {/* <div style={{display:'flex',flexDirection: 'column', justifyContent: 'center',alignItems:'center'}}>
             <div className='picture' style={{marginBottom:'40px'}}>

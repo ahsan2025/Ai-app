@@ -1,5 +1,6 @@
-import React from 'react'
+import {React} from 'react'
 import { Video,ScreenShare } from '../Imports/ImportImages'
+import ModalBox from './Modal/ModalBox';
 
 function ButtonGroups() {
   return (
@@ -12,6 +13,7 @@ function ButtonGroups() {
             <img src={ScreenShare} alt='screenshare'/>
             Screenshare
         </button>
+
     </div>
   )
 }

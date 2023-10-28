@@ -11,9 +11,9 @@ function CustomerProfile(props) {
     <div className='customprofile' >
         <div style={{display:'flex',justifyContent:'space-between',alignItems:'center'}}>
             <Title name='Customer Profile'/>
-            <button className='plusbutton'>
-                +
-            </button>
+              <button className='plusbutton'>
+              +
+              </button>
         </div>
           <div className='grid-profile'>
             <ProfileBox title="Full Name" img={Name} item={personalData.fullName}/>
