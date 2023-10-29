@@ -50,8 +50,8 @@ export default function StickyHeadTable() {
     <Tabs>
     <TabList>
     <Tab>Product purchase history</Tab>
-    <Tab>contact history</Tab>
-    <Tab>cases</Tab>
+    <Tab>Contact History</Tab>
+    <Tab>Cases</Tab>
     </TabList>
     <div className='tabdody'>
     <TabPanel>

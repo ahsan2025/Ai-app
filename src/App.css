@@ -500,8 +500,9 @@ header .admin-panel{
 }
 
 .left-tabs .message-panelstatus .messagepanel-chatbox{
-  height: calc(100% - 210px);
+  height: 100%;
   overflow: auto;
+  margin-bottom: 100px;
 }
 
 .left-tabs .task-panelstatus{
@@ -708,11 +709,21 @@ header .admin-panel{
   font-weight: 600;
 }
 
+.main-dashboard .grid-d-bottom > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .main-dashboard .grid-d-bottom{
   display: flex;
   margin-top: 24px;
   height: 100%;
   overflow: hidden;
+}
+
+.main-dashboard .grid-d-bottom img{
+  width: 100%;
 }
 
 .main-dashboard .grid-d-bottom .transcript-area{
@@ -750,6 +761,10 @@ header .admin-panel{
   display: block;
   padding: 4px 0;
 }
+.left-tabs .message-panelstatus span,
+.main-dashboard .transcript-area span{
+  padding-top: 0;
+}
 
 .main-dashboard .transcript-area p,
 .left-tabs .message-panelstatus p{
@@ -779,8 +794,6 @@ header .admin-panel{
   display: flex;
   background-color: var(--primary2);
   display: flex;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
   justify-content: space-between;
   padding: 20px;
   margin-top: 20px;
@@ -1121,7 +1134,7 @@ header .admin-panel{
     padding: 15px 20px;
   }
   .left-tabs{
-    padding: 7px 8px 0 8px;
+    padding: 7px 13px 0 13px;
   }
   .left-tabs .welcome{
     font-size: 20px;
@@ -1150,7 +1163,7 @@ header .admin-panel{
     width: 24px;
   }
   .left-tabs .bottom-area button:nth-child(2) img{
-    width: 27px;
+    width: 33px;
   }
   .title-main h2{
     font-size: 18px;
@@ -1222,7 +1235,7 @@ header .admin-panel{
     font-size: 12px;
   }
   .main-dashboard .grid-d-bottom .transcript-area{
-    padding: 7px 12px;
+    padding: 10px 12px;
   }
   .main-dashboard .transcript-area .transcript-box{
     padding: 7px 18px;
@@ -1240,9 +1253,10 @@ header .admin-panel{
   .right-panel .search-results{
     padding: 14px;
   }
-  .right-panel .titlesm{
+  .right-panel .titlesm h3{
     font-size: 16px;
   }
+
   .right-panel .search-results h4{
     font-size: 14px;
   }
@@ -1366,7 +1380,8 @@ header .admin-panel{
     font-size: 12px;
   }
   .left-tabs .message-panelstatus p{
-    font-size: 13px;
+    font-size: 11px;
+    line-height: 14px;
   }
   .left-tabs .message-panelstatus .message-bottombox{
     padding: 13px;
@@ -1405,6 +1420,9 @@ header .admin-panel{
     height: 55px;
     width: 55px;
   }
+  .left-tabs .message-panelstatus .messagepanel-chatbox{
+    margin-bottom: 60px;
+  }
 
 }
 
@@ -1419,7 +1437,7 @@ header .admin-panel{
     padding: 0 10px;
   }
   .left-tabs {
-    padding: 5px 6px 0 6px;
+    padding: 5px 11px 0 11px;
   }
   .left-tabs .picture img {
     height: 130px;
@@ -1456,6 +1474,9 @@ header .admin-panel{
   }
   .right-panel .search-results{
     padding: 10px;
+  }
+  .right-panel .search-results h3{
+    font-size: 14px;
   }
   .right-panel .titlesm{
     font-size: 14px;
@@ -1530,6 +1551,9 @@ header .admin-panel{
   .left-tabs li img{
     width: 18px;
   }
+  .left-tabs{
+    padding: 5px 09px 0px 9px;
+  }
   .left-tabs li:nth-child(3) img{
     width: 15px;
     height: 24px;
@@ -1544,6 +1568,10 @@ header .admin-panel{
   .left-tabs .quick-connect .MuiSelect-select {
     padding: 7px;
     font-size: 12px;
+    text-indent: 22px;
+  }
+  .form-group img{
+    width: 14px;
   }
   .left-tabs .bottom-area button{
     font-size: 11px;
@@ -1590,7 +1618,6 @@ header .admin-panel{
   .left-tabs .message-panelstatus p{
     font-size: 10px;
     line-height: 14px;
-    padding-top: 6px;
     padding-bottom: 9px;
   }
   .left-tabs .message-panelstatus input{
@@ -1673,7 +1700,7 @@ header .admin-panel{
     font-size: 14px;
   }
   .left-tabs .quick-connect .phone-num{
-    font-size: 12px;
+    font-size: 10px;
   }
   .left-tabs .quick-connect .MuiSvgIcon-root {
     left: 20px;
@@ -1769,6 +1796,7 @@ header .admin-panel{
   }
   .left-tabs .message-panelstatus p{
     font-size: 9px;
+    line-height: 12px;
   }
   .left-tabs .task-panelstatus .task-user{
     padding: 6px 9px;
@@ -1861,6 +1889,9 @@ header .admin-panel{
   .right-panel .search-results h4{
     font-size: 11px;
   }
+  .right-panel .search-results h3{
+    font-size: 12px;
+  }
   .right-panel .search-results p{
     font-size: 9px;
     line-height: 13px;
@@ -1906,6 +1937,9 @@ header .admin-panel{
   }
   .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root img{
     width: 15px;
+  }
+  .left-tabs .message-panelstatus .messagepanel-chatbox{
+    margin-bottom: 45px;
   }
 }
 

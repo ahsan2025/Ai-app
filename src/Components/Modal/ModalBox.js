@@ -18,4 +18,4 @@ function ModalBox(props) {
   )
 }
 
-export default ModalBox
+export default ModalBox;

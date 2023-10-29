@@ -28,12 +28,12 @@ function QuickConnects(props) {
                         displayEmpty
                         inputProps={{ 'aria-label': 'Without label' }}
                         >
-                          <MenuItem className='select' value="">
-                          <em style={{display:'flex',fontStyle:'normal'}}><img src={USA} alt='usa1'/> Enter quick connects or number</em>
+                        <MenuItem className='select' value="">
+                          <em style={{display:'flex',fontStyle:'normal'}}><img src={USA} alt='usa1'/> Select Nummber</em>
                         </MenuItem>
-                        <MenuItem className='select' value={10}><img src={USA} alt='usa2'/> Enter quick connects or number</MenuItem>
-                        <MenuItem className='select' value={20}><img src={USA} alt='usa3'/> Enter quick connects or number</MenuItem>
-                        <MenuItem className='select' value={30}><img src={USA} alt='usa4'/> Enter quick connects or number</MenuItem>
+                        <MenuItem className='select' value={10}><img src={USA} alt='usa2'/>+1 123 456 7890</MenuItem>
+                        <MenuItem className='select' value={20}><img src={USA} alt='usa3'/>+1 123 456 7890</MenuItem>
+                        <MenuItem className='select' value={30}><img src={USA} alt='usa4'/>+1 123 456 7890</MenuItem>
                         </Select>
                     </FormControl>
                     </Box>
