@@ -17,7 +17,7 @@ function StepWise() {
           <TitleSm white name='Step By Step'/>
         </div>
 
-        <ModalBox CloseModal={() => setModalOpen(false)} title='Step By Step' isOpen={modalOpen}>
+        <ModalBox Header={true} CloseModal={() => setModalOpen(false)} title='Step By Step' isOpen={modalOpen}>
               <div className='stepbody'>
                 <div className='stepline'>
                   <img src={LineStepWise} style={{height:'100%'}} alt='stepline'/>

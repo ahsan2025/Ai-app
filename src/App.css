@@ -1947,73 +1947,13 @@ header .admin-panel{
 
 
 
-
-
-.modal-active h2{
-  color: var(--primary2);
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.modal .flexarea{
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.modal .flexarea .icon{
-  height: 45px;
-  width: 45px;
-  margin-right: 15px;
-  background-color: var(--white);
-  display: flex;
-  z-index: 99;
-  justify-content: center;
-  align-items: center;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border: 1px solid #EAEAEA;
-  border-radius: 50%;
-}
-
-.closepopupbtn{
-  background-color: transparent;
-  border: none;
-}
-
-.modal .flexarea:last-child{
-  margin: 0;
-}
-
-.modal .stepbody{
-  position: relative;
-  margin-top: 22px;
-}
-
-.modal .stepbody .stepline{
-  position: absolute;
-  top: 0;
-  left: 22.5px;
-  bottom: 0;
-  z-index: -1 !important;
-}
-
-.modal .flexarea h4{
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--primary2);
-}
-
-.modal .flexarea p{
-  color: #484848;
-  font-size: 14px;
-  line-height: 19px;
-  font-weight: 300;
-}
+/* COMMON MODAL STYLES */
 
 .modal .toparea{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 18px;
 }
 .modal{
  opacity: 0;
@@ -2052,3 +1992,273 @@ header .admin-panel{
   visibility: visible;
 }
 
+.modal-active h2{
+  color: var(--primary2);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.closepopupbtn{
+  background-color: transparent;
+  border: none;
+}
+
+.modal p{
+  color: var(--primary2);
+  opacity: 0.63;
+  font-size: 16px;
+}
+
+/* COMMON MODAL STYLES */
+
+
+
+
+/* STEPWIESE POPUP */
+
+.modal .flexarea{
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.modal .flexarea .icon{
+  height: 45px;
+  width: 45px;
+  margin-right: 15px;
+  background-color: var(--white);
+  display: flex;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid #EAEAEA;
+  border-radius: 50%;
+}
+
+.modal .flexarea:last-child{
+  margin: 0;
+}
+
+.modal .stepbody{
+  position: relative;
+  margin-top: 22px;
+}
+
+.modal .stepbody .stepline{
+  position: absolute;
+  top: 0;
+  left: 22.5px;
+  bottom: 0;
+  z-index: -1 !important;
+}
+
+.modal .flexarea h4{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary2);
+}
+
+.modal .flexarea p{
+  color: #484848;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 300;
+}
+
+/* STEPWIESE POPUP */
+
+/* VIDEOSCREEN POPUP */
+
+.box-height{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  border: none;
+}
+
+.video-screenpicture{
+  position: relative;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-screenpicture .oncall{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.video-screenpicture .videoscreen-btns{
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.video-screenpicture button img,
+.right-panel .button-groups button:nth-child(1){
+  margin: 0 !important;
+}
+
+.video-screenpicture button{
+  margin-right: 10px !important;
+  padding: 0 !important;
+}
+
+.video-screenpicture .endcallbtn{
+  background: #F8000F !important;
+}
+
+.video-screenpicture button{
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50% !important;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+
+.video-screenpicture .sharescrrenbtn{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  padding: 13px 22px !important;
+  background-color: var(--primary) !important;
+  width: auto !important;
+  border-radius: 12px !important;
+  font-size: 14px;
+  color: var(--white) !important;
+}
+
+.button-groups .box-height{
+  background: #1E1D2B;
+}
+
+/* VIDEOSCREEN POPUP */
+
+/* PROFILE POPUP */
+
+.profileform-body{
+  overflow: auto;
+  height: 100%;
+}
+
+.profile-form{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 24px;
+}
+
+.modal .header{
+  padding-top: 40px;
+  border-top: 1px solid rgba(15, 9, 79, 0.12);
+}
+
+.modal .header span{
+  color: var(--primary2);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.42px;
+}
+
+.profile-form label{
+  color: var(--primary2);
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  display: block;
+}
+
+.profile-form .MuiSelect-select{
+  padding: 0;
+  height: 45px;
+  text-indent: 20px;
+  border: none !important;
+}
+
+.profile-form input,
+.profile-form .MuiSelect-select,
+.profile-form .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+  height: 45px !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-indent: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: rgba(15, 9, 79, 0.35);
+  font-size: 14px;
+  letter-spacing: 0.42px;
+}
+
+.profile-form .css-4jnixx-MuiStack-root>.MuiTextField-root{
+  min-width: 100%;
+}
+
+.profileform-submit{
+  padding: 17px 120px;
+  border-radius: 10px;
+  background: #25CB88;
+  color: var(--white);
+  font-size: 18px;
+  border: none;
+  position: sticky;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.profile-form .MuiButtonBase-root{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 10px;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.profile-form svg{
+  fill: var(--primary2);
+}
+
+.profile-form .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root{
+  border-radius: 10px;
+}
+
+.profile-form .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline{
+  border-color: transparent !important;
+}
+
+.profile-form .MuiStack-root{
+  padding: 0;
+  overflow: hidden;
+}
+
+.profile-form .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root input{
+  border: none;
+  outline:  none;
+  padding: 0;
+}
+
+.profile-form .MuiBox-root{
+  padding-right: 0 !important;
+}
+
+.profile-form .form-group{
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+/* PROFILE POPUP */
