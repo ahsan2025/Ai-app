@@ -34,7 +34,7 @@ function CustomerProfile(props) {
           <ProfileBox title="Address" img={Address} item={personalData.address}/>
         </div>
     </div>
-    <ModalBox className='j,dsjkd' isHeight Header={true} des='Follow simple steps to create your profile' CloseModal={() => setModalOpen(false)} title='Create Profile' isOpen={modalOpen}>
+    <ModalBox isHeight Header={true} des='Follow simple steps to create your profile' CloseModal={() => setModalOpen(false)} title='Create Profile' isOpen={modalOpen}>
       <div className='profileform-body'>
       <div className='header'>
         <span>Step 1/6</span>

@@ -13,9 +13,11 @@ function LeftPanel() {
   }
 
   return (
+    <>
     <div style={{background : active === 0 ? 'var(--white)': 'var(--primary2)'}} className={isMyActive}>
       <PanelArea changeStyles={(e)=>changeStylesFunc(e)} parentActivator={(value)=> isActive(value)} className='mydiv'/>
     </div>
+    </>
   )
 }
 

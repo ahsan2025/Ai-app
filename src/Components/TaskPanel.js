@@ -1,9 +1,17 @@
-import React from 'react'
+import {React,useState} from 'react'
 import { Calender,Clock,TaskPerson} from '../Imports/ImportImages'
 import { taskData } from '../resource/localData'
+import ModalBox from './Modal/ModalBox';
+import FormFields from './FormFields';
 
-function TaskPanel() {
+function TaskPanel(props) {
+    const [modalOpen,setModalOpen] = useState(false);
+
+    const OpenModalBox = () => {
+      setModalOpen(true)
+    }
   return (
+    <>
     <div style={{height:'100%',display:'flex',justifyContent:'center',width:'100%'}}>
     {/* <div style={{display:'flex',flexDirection: 'column', justifyContent: 'center',alignItems:'center'}}>
         <div className='picture' style={{marginBottom:'40px'}}>
@@ -24,12 +32,46 @@ function TaskPanel() {
                 <span className='task-user' style={{color:'var(--white)'}}><img src={TaskPerson} alt='taskperson'/>{item.user}</span>
             </div>
             )}
-            <div className='add-task'>
+            <div className='add-task' onClick={OpenModalBox}>
                 +
             </div>
         </div>
     </div>
-</div>
+    </div>
+    <ModalBox isHeight Header={true} des='Follow simple steps to create your profile' CloseModal={() => setModalOpen(false)} title='Create Profile' isOpen={modalOpen}>
+      <div className='profileform-body'>
+      <div className='header'>
+        <span>Step 1/6</span>
+        <h2>Personal Detail</h2>
+      </div>
+      <div className='profile-form'>
+        <FormFields width='33.33%' label='First Name' type='text' placeholder='Enter your first name'/>
+        <FormFields width='33.33%' label='Last Name' type='text' placeholder='Enter your first name'/>
+        <FormFields width='33.33%' label='Mobile number' type='number' placeholder='Enter your mobile Number'/>
+        <FormFields width='33.33%' label='Gender' dropdown/>
+        <FormFields width='33.33%' calender label='Date Of Birth'/>
+        <FormFields width='33.33%' label='Account Number' dropdown/>
+        <FormFields width='100%' widthfull label='Description'/>
+      </div>
+      <div className='header'>
+        <span>Step 1/6</span>
+        <h2>Personal Detail</h2>
+      </div>
+      <div className='profile-form'>
+        <FormFields width='33.33%' label='First Name' type='text' placeholder='Enter your first name'/>
+        <FormFields width='33.33%' label='Last Name' type='text' placeholder='Enter your first name'/>
+        <FormFields width='33.33%' label='Mobile number' type='number' placeholder='Enter your mobile Number'/>
+        <FormFields width='33.33%' label='Gender' dropdown/>
+        <FormFields width='33.33%' calender label='Date Of Birth'/>
+        <FormFields width='33.33%' label='Account Number' dropdown/>
+        <FormFields width='100%' widthfull label='Description'/>
+      </div>
+      </div>
+      <div style={{display:'flex',justifyContent:'center',background:'var(--white)',padding:'10px'}}>
+        <button className='profileform-submit'>DONE</button>
+      </div>
+    </ModalBox>
+    </>
   )
 }
 

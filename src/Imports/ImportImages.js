@@ -57,5 +57,6 @@ import MicIcon from '../assets/img/mic-icon.svg';
 import SettingIcon from '../assets/img/settimgs-icon.svg';
 import SharePicture from '../assets/img/sharescreenpicture.jpg';
 import Computer from '../assets/img/computer.svg';
+import Downloadd from '../assets/img/downloadd.svg';
 
-export {Logo,Settings,Call,Message,History,Alexander,Name,ProfileId,AccountNo,PhoneNo,DOB,Gender,Email,Address,UpIcon,SearchImg,StepWiseImg,Video,ScreenShare,Person,Line,Agent,BigLine,VerticalLine,Connect,NumberPad,WConnect,NumberPadW,USA,CallUser,Mute,Hold,Keypad,CallAdmin,CallTransfer,EndCall,MessageTabImg,Send,MingCute,ContactMes,EndChat,TaskTabImg,Calender,Clock,TaskPerson,AddTaskImg,AdminNumarea,Incoming,Cancel,StepIcon,LineStepWise,VideoScreen,OnCalling,ScreenStart,VideoShareIcon,MicIcon,SettingIcon,SharePicture,Computer}
+export {Logo,Settings,Call,Message,History,Alexander,Name,ProfileId,AccountNo,PhoneNo,DOB,Gender,Email,Address,UpIcon,SearchImg,StepWiseImg,Video,ScreenShare,Person,Line,Agent,BigLine,VerticalLine,Connect,NumberPad,WConnect,NumberPadW,USA,CallUser,Mute,Hold,Keypad,CallAdmin,CallTransfer,EndCall,MessageTabImg,Send,MingCute,ContactMes,EndChat,TaskTabImg,Calender,Clock,TaskPerson,AddTaskImg,AdminNumarea,Incoming,Cancel,StepIcon,LineStepWise,VideoScreen,OnCalling,ScreenStart,VideoShareIcon,MicIcon,SettingIcon,SharePicture,Computer,Downloadd}

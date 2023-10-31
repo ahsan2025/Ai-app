@@ -135,11 +135,12 @@ header .admin-panel{
   width: 25%;
   height: 100%;
   background-color: var(--white);
-  overflow: auto;
+  /* overflow: auto; */
   border-radius: 10px;
   border : 1px solid #EAEAEA;
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.10));
   padding: 10px 15px 0 15px;
+  z-index: 5;
 }
 
 .left-tabs .react-tabs__tab--selected{
@@ -1427,6 +1428,7 @@ header .admin-panel{
 }
 
 @media(max-width:1550px){
+
   header{
     padding: 5px 12px;
   }
@@ -2066,6 +2068,10 @@ header .admin-panel{
   font-weight: 300;
 }
 
+.stepwises .modal .toparea{
+  padding-bottom: 0;
+}
+
 /* STEPWIESE POPUP */
 
 /* VIDEOSCREEN POPUP */
@@ -2152,6 +2158,10 @@ header .admin-panel{
   display: flex;
   flex-wrap: wrap;
   padding-top: 24px;
+}
+
+.profile-form .css-ihdtdm{
+  width: 0;
 }
 
 .modal .header{
@@ -2262,3 +2272,231 @@ header .admin-panel{
 }
 
 /* PROFILE POPUP */
+
+/* Task Popup Styles */
+
+.left-tabs .blocker{
+  transform: scale(7.5);
+}
+
+.left-tabs .box-height{
+  left: 200%;
+  width: 800px;
+}
+
+/* Task Popup Styles */
+
+/* HEADER POPUP */
+
+
+header .modal{
+  right: 30px;
+  top: 105px;
+  width: 460px;
+  transform: translate(0, 0);
+  left: auto;
+  background-color: var(--primary2);
+  border: none;
+}
+
+header .MuiPaper-root{
+  background-color: transparent;
+}
+
+header .modal p{
+  color: #FBFBFB;
+  font-size: 14px;
+}
+
+header .MuiCollapse-root p{
+  padding-bottom: 10px;
+}
+
+header .modal-active{
+  top: 110%;
+}
+
+header .css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type{
+  margin: 0;
+}
+
+header .MuiAccordion-root{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header .MuiAccordion-root,
+header .MuiAccordionDetails-root {
+  margin: 0;
+  padding: 0;
+}
+
+/* header .MuiAccordionSummary-root{
+  margin-top: 12px;
+} */
+
+header .MuiAccordionSummary-root,
+header .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded{
+  min-height: 40px;
+  padding: 0;
+  box-shadow: none;
+}
+
+header .css-1elwnq4-MuiPaper-root-MuiAccordion-root{
+  box-shadow: none !important;
+}
+
+header .MuiAccordionSummary-root svg{
+  fill: var(--white);
+}
+
+header .modal h4{
+  color: var(--white);
+  font-size: 17px;
+  font-weight: bold;
+}
+
+header{
+  position: relative;
+}
+
+header .modal label{
+  color: var(--white);
+  padding-top: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+header .modal ~ .blocker{
+  top: 100%;
+  position: absolute;
+}
+
+header .modal .MuiAccordionSummary-content{
+  margin: 0;
+}
+
+header input{
+  position: absolute;
+  left: -1000px;
+  top: -1000px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+header .modal li{
+  list-style: none;
+  margin-top: 15px;
+}
+
+header input:checked + .mylabel::after{
+  content: "";
+  position: absolute;
+  top: 7px;
+  transform: translateY(-50%);
+  height: 3px;
+  width: 9px;
+  left: 02px;
+  display: block;
+  border-left: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  transform: rotate(-45deg);
+}
+
+header .modal .mylabel{
+  padding-top: 0;
+  padding-left: 27px;
+  position: relative;
+}
+
+header .phone-type{
+  padding-top: 16px;
+}
+
+header .deskphone-num input{
+  position: static;
+  opacity: 1;
+  visibility: visible;
+}
+
+header .radio2 input:checked + label .click-active{
+  display: block !important;
+}
+
+header .click-active{
+  display: none;
+}
+
+header .input-field{
+  position: static;
+  opacity: 1;
+  background-color: transparent;
+  border: none;
+  visibility: visible;
+  width: 100%;
+  padding-bottom: 10px;
+  font-size: 15px;
+  margin-top: 16px;
+  color: #CFCFCF;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.80) !important;
+}
+
+header .MuiSelect-select{
+  padding: 7px 0;
+  background-color: transparent;
+  color: var(--white);
+}
+
+header .modal .bottom-area{
+  display: flex;
+  padding-top: 26px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .modal .bottom-area button:nth-child(1){
+  background-color: var(--white);
+  margin-right: 6px;
+}
+
+header .modal .bottom-area button:nth-child(2){
+  background-color: #25CB88;
+  color: var(--white);
+}
+
+header .modal .bottom-area button{
+  width: 90px;
+  padding: 9px 0;
+  font-size: 14px;
+  border: none;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  border-radius: 6px;
+}
+
+header .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon{
+  color: var(--white) !important;
+}
+
+header .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+  border-width: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.20) !important;
+}
+
+header .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+  border-color: none;
+  border-width: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.20) !important;
+}
+
+header .mylabel::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 03px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--white);
+  border-radius: 2px;
+}
+
+/* HEADER POPUP */

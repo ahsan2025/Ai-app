@@ -11,7 +11,7 @@ function StepWise() {
   }
 
   return (
-    <div>
+    <div className='stepwises'>
         <div className='steps' onClick={OpenModalBox}>
           <img src={StepWiseImg} alt='stepimage'/>
           <TitleSm white name='Step By Step'/>

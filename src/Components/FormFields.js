@@ -20,7 +20,7 @@ function FormFields(props) {
     <>
 
     <div className='form-group' style={{width: props.width}}>
-        <label for='' id=''>{props.label}</label>
+        <label id=''>{props.label}</label>
         {props.dropdown ? 
             <Box className='form-group'>
                 <FormControl fullWidth>

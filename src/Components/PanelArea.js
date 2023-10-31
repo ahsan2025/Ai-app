@@ -9,6 +9,7 @@ import TaskPanel from './TaskPanel';
 function PanelArea(props) {
 
   return (
+    <>
     <div style={{height: '100%'}}>  
         <Tabs>
         <TabList>
@@ -31,6 +32,8 @@ function PanelArea(props) {
         </div>
         </Tabs>
     </div>
+ 
+    </>
   )
 }
 
