@@ -38,33 +38,22 @@ function TaskPanel(props) {
         </div>
     </div>
     </div>
-    <ModalBox isHeight Header={true} des='Follow simple steps to create your profile' CloseModal={() => setModalOpen(false)} title='Create Profile' isOpen={modalOpen}>
+    <ModalBox isHeight Header={true} des='Follow simple steps to create your profile' CloseModal={() => setModalOpen(false)} title='Create Task' isOpen={modalOpen}>
       <div className='profileform-body'>
       <div className='header'>
-        <span>Step 1/6</span>
-        <h2>Personal Detail</h2>
+        
       </div>
       <div className='profile-form'>
-        <FormFields width='33.33%' label='First Name' type='text' placeholder='Enter your first name'/>
-        <FormFields width='33.33%' label='Last Name' type='text' placeholder='Enter your first name'/>
-        <FormFields width='33.33%' label='Mobile number' type='number' placeholder='Enter your mobile Number'/>
-        <FormFields width='33.33%' label='Gender' dropdown/>
-        <FormFields width='33.33%' calender label='Date Of Birth'/>
-        <FormFields width='33.33%' label='Account Number' dropdown/>
-        <FormFields width='100%' widthfull label='Description'/>
-      </div>
-      <div className='header'>
-        <span>Step 1/6</span>
-        <h2>Personal Detail</h2>
-      </div>
-      <div className='profile-form'>
-        <FormFields width='33.33%' label='First Name' type='text' placeholder='Enter your first name'/>
-        <FormFields width='33.33%' label='Last Name' type='text' placeholder='Enter your first name'/>
-        <FormFields width='33.33%' label='Mobile number' type='number' placeholder='Enter your mobile Number'/>
-        <FormFields width='33.33%' label='Gender' dropdown/>
-        <FormFields width='33.33%' calender label='Date Of Birth'/>
-        <FormFields width='33.33%' label='Account Number' dropdown/>
-        <FormFields width='100%' widthfull label='Description'/>
+          <div>
+          <FormFields width='33.33%' label='Task name' type='text' placeholder='Enter task name'/>
+          <FormFields width='33.33%' calender label='Select Date' type='text'/>
+          <FormFields width='33.33%' time label='Select Time' type='number' placeholder='Enter your mobile Number'/>
+          <FormFields width='50%' label='Refrences' dropdown/>
+          <FormFields width='50%' dropdown label='Assign to'/>
+          </div>
+          <div>
+          <FormFields width='100%' type='text' widthfull label='Description' placeholder='Write brief description'/>
+          </div>
       </div>
       </div>
       <div style={{display:'flex',justifyContent:'center',background:'var(--white)',padding:'10px'}}>

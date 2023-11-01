@@ -7,6 +7,7 @@ import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import dayjs from 'dayjs';
+import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import Select from '@mui/material/Select';
 
 function FormFields(props) {
@@ -45,7 +46,14 @@ function FormFields(props) {
                     <DatePicker defaultValue={dayjs('select')}/>
                     </DemoContainer>
                 </LocalizationProvider>
-            : <input type={props.type} placeholder={props.placeholder}/>
+            : 
+            props.time ?  <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoContainer components={['TimePicker']}>
+              <TimePicker/>
+            </DemoContainer>
+          </LocalizationProvider>
+          :
+            <input type={props.type} placeholder={props.placeholder}/>
         }
         
     </div>

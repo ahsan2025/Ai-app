@@ -41,26 +41,26 @@ function CustomerProfile(props) {
         <h2>Personal Detail</h2>
       </div>
       <div className='profile-form'>
-        <FormFields width='33.33%' label='First Name' type='text' placeholder='Enter your first name'/>
-        <FormFields width='33.33%' label='Last Name' type='text' placeholder='Enter your first name'/>
-        <FormFields width='33.33%' label='Mobile number' type='number' placeholder='Enter your mobile Number'/>
-        <FormFields width='33.33%' label='Gender' dropdown/>
-        <FormFields width='33.33%' calender label='Date Of Birth'/>
-        <FormFields width='33.33%' label='Account Number' dropdown/>
-        <FormFields width='100%' widthfull label='Description'/>
+          <FormFields width='33.33%' label='First Name' type='text' placeholder='Enter your first name'/>
+          <FormFields width='33.33%' label='Last Name' type='text' placeholder='Enter your first name'/>
+          <FormFields width='33.33%' label='Mobile number' type='number' placeholder='Enter your mobile Number'/>
+          <FormFields width='33.33%' label='Gender' dropdown/>
+          <FormFields width='33.33%' calender label='Date Of Birth'/>
+          <FormFields width='33.33%' label='Account Number' dropdown/>
+          <FormFields width='100%' type='text' widthfull label='Description' placeholder='Write brief description'/>
       </div>
       <div className='header'>
         <span>Step 1/6</span>
         <h2>Personal Detail</h2>
       </div>
       <div className='profile-form'>
-        <FormFields width='33.33%' label='First Name' type='text' placeholder='Enter your first name'/>
-        <FormFields width='33.33%' label='Last Name' type='text' placeholder='Enter your first name'/>
-        <FormFields width='33.33%' label='Mobile number' type='number' placeholder='Enter your mobile Number'/>
-        <FormFields width='33.33%' label='Gender' dropdown/>
-        <FormFields width='33.33%' calender label='Date Of Birth'/>
-        <FormFields width='33.33%' label='Account Number' dropdown/>
-        <FormFields width='100%' widthfull label='Description'/>
+          <FormFields width='33.33%' label='First Name' type='text' placeholder='Enter your first name'/>
+          <FormFields width='33.33%' label='Last Name' type='text' placeholder='Enter your first name'/>
+          <FormFields width='33.33%' label='Mobile number' type='number' placeholder='Enter your mobile Number'/>
+          <FormFields width='33.33%' label='Gender' dropdown/>
+          <FormFields width='33.33%' calender label='Date Of Birth'/>
+          <FormFields width='33.33%' label='Account Number' dropdown/>
+          <FormFields width='100%' widthfull label='Description'/>
       </div>
       </div>
       <div style={{display:'flex',justifyContent:'center',background:'var(--white)',padding:'10px'}}>

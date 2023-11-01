@@ -34,11 +34,21 @@ function ButtonGroups() {
               <img src={OnCalling} alt='oncall'/>
             </div>
             <div className='videoscreen-btns'>
-              <button><img src={ScreenStart} alt='screen-start'/></button>
-              <button><img src={VideoShareIcon} alt='video-shareicon'/></button>
-              <button onClick={CloseModelBox} className='endcallbtn'><img src={EndCall} alt='endcall'/></button>
-              <button><img src={MicIcon} alt='micicon'/></button>
-              <button><img src={SettingIcon} alt='settingicon'/></button>
+              <div>
+                <button><img src={ScreenStart} alt='screen-start'/></button>
+              </div>
+              <div>
+                <button><img src={VideoShareIcon} alt='video-shareicon'/></button>
+              </div>
+              <div>
+                <button onClick={CloseModelBox} className='endcallbtn'><img src={EndCall} alt='endcall'/></button>
+              </div>
+              <div>
+                <button><img src={MicIcon} alt='micicon'/></button>
+              </div>
+              <div>
+                <button><img src={SettingIcon} alt='settingicon'/></button>
+              </div>
             </div>
           </div>
         </ModalBox> : null}
@@ -50,11 +60,21 @@ function ButtonGroups() {
               <img src={OnCalling} alt='oncall'/>
             </div>
             <div className='videoscreen-btns'>
-              <button><img src={ScreenStart} alt='screen-start'/></button>
-              <button><img src={VideoShareIcon} alt='video-shareicon'/></button>
-              <button onClick={CloseModelBox} className='endcallbtn'><img src={EndCall} alt='endcall'/></button>
-              <button><img src={MicIcon} alt='micicon'/></button>
-              <button><img src={SettingIcon} alt='settingicon'/></button>
+            <div>
+                <button><img src={ScreenStart} alt='screen-start'/></button>
+              </div>
+              <div>
+                <button><img src={VideoShareIcon} alt='video-shareicon'/></button>
+              </div>
+              <div>
+                <button onClick={CloseModelBox} className='endcallbtn'><img src={EndCall} alt='endcall'/></button>
+              </div>
+              <div>
+                <button><img src={MicIcon} alt='micicon'/></button>
+              </div>
+              <div>
+                <button><img src={SettingIcon} alt='settingicon'/></button>
+              </div>
             </div>
             <button onClick={CloseModelBox} className='sharescrrenbtn'>
               <img style={{paddingRight:'5px'}} src={Computer} alt='computer'/>

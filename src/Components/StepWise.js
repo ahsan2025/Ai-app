@@ -1,6 +1,6 @@
 import {React,useState} from 'react'
 import TitleSm from './TitleSm'
-import { StepWiseImg,StepIcon,LineStepWise } from '../Imports/ImportImages'
+import { StepWiseImg,LineStepWise } from '../Imports/ImportImages'
 import ModalBox from './Modal/ModalBox';
 
 function StepWise() {
@@ -24,7 +24,7 @@ function StepWise() {
                 </div>
                 <div className='flexarea'>
                   <div className='icon'>
-                    <img src={StepIcon} alt='stepimg'/> 
+                    
                   </div>
                   <div>
                     <h4>Consectetur sit amet</h4>
@@ -33,7 +33,7 @@ function StepWise() {
                 </div>
                 <div className='flexarea'>
                   <div className='icon'>
-                    <img src={StepIcon} alt='stepimg'/> 
+                    
                   </div>
                   <div>
                     <h4>Consectetur sit amet</h4>
@@ -42,7 +42,7 @@ function StepWise() {
                 </div>
                 <div className='flexarea'>
                   <div className='icon'>
-                    <img src={StepIcon} alt='stepimg'/> 
+                    
                   </div>
                   <div>
                     <h4>Consectetur sit amet</h4>
@@ -51,7 +51,7 @@ function StepWise() {
                 </div>
                 <div className='flexarea'>
                   <div className='icon'>
-                    <img src={StepIcon} alt='stepimg'/> 
+                    
                   </div>
                   <div>
                     <h4>Consectetur sit amet</h4>
