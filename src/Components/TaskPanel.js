@@ -44,16 +44,12 @@ function TaskPanel(props) {
         
       </div>
       <div className='profile-form'>
-          <div>
           <FormFields width='33.33%' label='Task name' type='text' placeholder='Enter task name'/>
           <FormFields width='33.33%' calender label='Select Date' type='text'/>
           <FormFields width='33.33%' time label='Select Time' type='number' placeholder='Enter your mobile Number'/>
           <FormFields width='50%' label='Refrences' dropdown/>
           <FormFields width='50%' dropdown label='Assign to'/>
-          </div>
-          <div>
           <FormFields width='100%' type='text' widthfull label='Description' placeholder='Write brief description'/>
-          </div>
       </div>
       </div>
       <div style={{display:'flex',justifyContent:'center',background:'var(--white)',padding:'10px'}}>
