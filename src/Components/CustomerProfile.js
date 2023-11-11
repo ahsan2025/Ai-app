@@ -47,7 +47,7 @@ function CustomerProfile(props) {
           <FormFields width='33.33%' label='Gender' dropdown/>
           <FormFields width='33.33%' calender label='Date Of Birth'/>
           <FormFields width='33.33%' label='Account Number' dropdown/>
-          <FormFields width='100%' type='text' widthfull label='Description' placeholder='Write brief description'/>
+          <FormFields width='100%' textarea label='Description' placeholder='Write brief description'/>
       </div>
       <div className='header'>
         <span>Step 1/6</span>
@@ -60,7 +60,7 @@ function CustomerProfile(props) {
           <FormFields width='33.33%' label='Gender' dropdown/>
           <FormFields width='33.33%' calender label='Date Of Birth'/>
           <FormFields width='33.33%' label='Account Number' dropdown/>
-          <FormFields width='100%' widthfull label='Description'/>
+          <FormFields width='100%' textarea label='Description' placeholder='Write brief description'/>
       </div>
       </div>
       <div style={{display:'flex',justifyContent:'center',background:'var(--white)',padding:'10px'}}>

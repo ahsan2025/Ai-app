@@ -53,9 +53,11 @@ function FormFields(props) {
             </DemoContainer>
           </LocalizationProvider>
           :
-            <input type={props.type} placeholder={props.placeholder}/>
+          props.textarea ? <textarea style={{width:'100%',height:'150px !important'}} placeholder={props.placeholder}></textarea> 
+          :
+            <input style={{textAlignVertical: "top"}} type={props.type} placeholder={props.placeholder}/>
         }
-        
+       
     </div>
     </>
   )

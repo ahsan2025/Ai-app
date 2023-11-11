@@ -48,55 +48,59 @@ function Header() {
             <h4>Audio Device</h4>
             <div>
             <label style={{display:'block'}}>Speaker</label>   
-            <Accordion>
-            <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-            >
-               
-            <Typography>Default - LC32T55 (Intel(R) Display Audio)</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-            <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
-            </Typography>
-            </AccordionDetails>
-            </Accordion>
+            <Box className='form-group'>
+                <FormControl fullWidth>
+                    <Select
+                    value={age}
+                    onChange={handleChange}
+                    displayEmpty
+                    inputProps={{ 'aria-label': 'Without label' }}
+                    >
+                    <MenuItem className='select' value="">
+                        <em style={{display:'flex',fontStyle:'normal'}}>Select</em>
+                    </MenuItem>
+                    <MenuItem className='select' value={10}>+1 123 456 7890</MenuItem>
+                    <MenuItem className='select' value={20}>+1 123 456 7890</MenuItem>
+                    <MenuItem className='select' value={30}>+1 123 456 7890</MenuItem>
+                    </Select>
+                </FormControl>
+            </Box>
             <label style={{display:'block'}}>Microphone</label>   
-            <Accordion>
-            <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-            >
-               
-            <Typography>Default - LC32T55 (Intel(R) Display Audio)</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-            <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                malesuada lacus ex, sit amet blandit leo lobortis eget.
-            </Typography>
-            </AccordionDetails>
-            </Accordion>
+            <Box className='form-group'>
+                <FormControl fullWidth>
+                    <Select
+                    value={age}
+                    onChange={handleChange}
+                    displayEmpty
+                    inputProps={{ 'aria-label': 'Without label' }}
+                    >
+                    <MenuItem className='select' value="">
+                        <em style={{display:'flex',fontStyle:'normal'}}>Select</em>
+                    </MenuItem>
+                    <MenuItem className='select' value={10}>+1 123 456 7890</MenuItem>
+                    <MenuItem className='select' value={20}>+1 123 456 7890</MenuItem>
+                    <MenuItem className='select' value={30}>+1 123 456 7890</MenuItem>
+                    </Select>
+                </FormControl>
+            </Box>
             <label style={{display:'block'}}>Ringer</label>   
-            <Accordion>
-                <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2a-content"
-                id="panel2a-header"
-                >
-                <Typography>Default - LC32T55 (Intel(R) Display Audio)</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
-            </Typography>
-            </AccordionDetails>
-            </Accordion>
+            <Box className='form-group'>
+                <FormControl fullWidth>
+                    <Select
+                    value={age}
+                    onChange={handleChange}
+                    displayEmpty
+                    inputProps={{ 'aria-label': 'Without label' }}
+                    >
+                    <MenuItem className='select' value="">
+                        <em style={{display:'flex',fontStyle:'normal'}}>Select</em>
+                    </MenuItem>
+                    <MenuItem className='select' value={10}>+1 123 456 7890</MenuItem>
+                    <MenuItem className='select' value={20}>+1 123 456 7890</MenuItem>
+                    <MenuItem className='select' value={30}>+1 123 456 7890</MenuItem>
+                    </Select>
+                </FormControl>
+            </Box>
             <div className='phone-type'>
             <label style={{display:'block'}}>Phone Type</label>
             <ul>

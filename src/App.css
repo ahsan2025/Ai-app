@@ -237,9 +237,9 @@
   height: 100%;
 }
 
-.profile-form .form-group:last-child input{
+/* .profile-form .form-group:last-child input{
     height: 150px !important;
-}
+} */
 
 .profile-form{
   display: flex;
@@ -281,7 +281,8 @@
 
 .profile-form input,
 .profile-form .MuiSelect-select,
-.profile-form .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+.profile-form .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root,
+.profile-form textarea{
   height: 45px !important;
   width: 100%;
   display: flex;
@@ -292,6 +293,12 @@
   color: rgba(15, 9, 79, 0.35);
   font-size: 14px;
   letter-spacing: 0.42px;
+}
+
+.profile-form textarea{
+  height: 150px !important;
+  padding-top: 10px;
+  resize: none;
 }
 
 .profile-form .css-4jnixx-MuiStack-root>.MuiTextField-root{
@@ -567,7 +574,7 @@ header .modal .bottom-area button{
   border-radius: 6px;
 }
 
-header .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon{
+header svg{
   color: var(--white) !important;
 }
 

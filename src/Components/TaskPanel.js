@@ -49,7 +49,7 @@ function TaskPanel(props) {
           <FormFields width='33.33%' time label='Select Time' type='number' placeholder='Enter your mobile Number'/>
           <FormFields width='50%' label='Refrences' dropdown/>
           <FormFields width='50%' dropdown label='Assign to'/>
-          <FormFields width='100%' type='text' widthfull label='Description' placeholder='Write brief description'/>
+          <FormFields width='100%' textarea label='Description' placeholder='Write brief description'/>
       </div>
       </div>
       <div style={{display:'flex',justifyContent:'center',background:'var(--white)',padding:'10px'}}>
